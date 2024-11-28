@@ -47,3 +47,9 @@
     display: flex;
     gap: 4px;
 }
+
+.tags > * {
+    
+    padding: 2px;
+    background-color: bisque;
+}
