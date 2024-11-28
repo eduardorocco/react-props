@@ -4,6 +4,7 @@
     box-shadow: rgba(0, 0, 0, 0.31)   0px 0px 25px 0px ;
     max-width: 600px;
     background-color: white;
+    margin: 10px;
 }
 
 .image {
@@ -36,4 +37,21 @@
     padding: 7px;
     display: inline-block;
     font-size: 12px;
+}
+
+.tags{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.js {
+    color: yellow;
+}
+
+.html {
+    color: orange;
+}
+
+.css {
+    color: cyan;
 }

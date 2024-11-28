@@ -8,9 +8,11 @@ export default function Main() {
             <div className="container">
                 <div className={style.row}>
                     {posts.map((post) => (
-                        <div key={post.id} className="col-6">
-                            <Card title={post.title}/>
-                        </div>
+                        post.published && (
+                            <div key={post.id} className="col-6">
+                                <Card title={post.title} content={post.content} tags={post.tags} image={post.image} />
+                            </div>
+                        )
                     ))}
                 </div>
             </div>
