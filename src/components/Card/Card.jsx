@@ -4,6 +4,19 @@ import placeHolder from '../../assets/placeholder.webp'
 export default function Card({ title = '', content = '', tags = [], image = '' }) {
 
 
+    const getTagClass = (tag) => {
+        switch (tag.toLowerCase()) {
+            case 'html':
+                return style.orange
+            case 'css':
+                return style.blue
+            case 'js':
+                return style.yellow
+            case 'php':
+                return style.green
+        }
+    };
+
     return (
         <div className={style.card}>
             <div>
@@ -13,7 +26,7 @@ export default function Card({ title = '', content = '', tags = [], image = '' }
                     <div className={style.tags}>
                         {tags.map((tag, index) => (
                             <div key={index} className={style.tags}>
-                                <div>
+                                <div className={getTagClass(tag)}>
                                     {tag}
                                 </div>
                             </div>
