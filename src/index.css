@@ -18,3 +18,7 @@ body{
   max-width: 1024px;
   margin: 0 auto;
 }
+
+.col-6 {
+  width: calc(100% / 2);
+}
