@@ -39,19 +39,11 @@
     font-size: 12px;
 }
 
+
 .tags{
     font-size: 12px;
-    padding-bottom: 10px;
-}
-
-.js {
-    color: yellow;
-}
-
-.html {
-    color: orange;
-}
-
-.css {
-    color: cyan;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    gap: 4px;
 }
