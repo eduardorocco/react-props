@@ -12,8 +12,10 @@ export default function Card({ title = '', content = '', tags = [], image = '' }
                     <div className={style.title}>{title}</div>
                     <div className={style.tags}>
                         {tags.map((tag, index) => (
-                            <div key={index} className={`${style.tags}}`}>
-                                {tag}
+                            <div key={index} className={style.tags}>
+                                <div>
+                                    {tag}
+                                </div>
                             </div>
                         ))}
                     </div>
